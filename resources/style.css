@@ -1,0 +1,230 @@
+html{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #222222;
+  font-family: 'Roboto';
+  color: #FFFFFF;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 !important;
+  padding: 0 !important;
+
+
+}
+
+.back{
+  min-height: 350px;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-bottom: solid;
+  border-bottom-color: #BB0000;
+  padding-top: 40px;
+}
+
+#chet{
+  background-image: url("chet-big.png");
+}
+
+#chet h1{
+    color: #FFFFFF;
+    padding: 150px 0 0 20%;
+
+}
+
+a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+nav a:hover{
+  color: #BB0000;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.red{
+  color: #BB0000;
+}
+
+header{
+  border-bottom: solid;
+  border-color: #BB0000;
+  margin-top: -10px;
+  min-height: 70px;
+  width: 100%;
+  position: fixed;
+  background-color: #222222;
+
+}
+
+header h1{
+  padding: 0;
+  margin: 0;
+}
+
+header li{
+  list-style: none;
+  display: inline;
+  padding: 0 20px 0 20px;
+  float: left;
+}
+
+header .title{
+  float: left;
+  padding: 0;
+}
+
+section{
+  min-height: 200px;
+}
+
+nav{
+  float: right;
+  margin-top: 10px;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.heading{
+  color: #FFFFFF;
+
+}
+
+
+section {
+  padding-top: 10px;
+  border: none;
+  background-color: rgba(51, 51, 51, 0.9);
+  border-bottom: solid;
+  border-color: #BB0000;
+}
+
+section .container{
+  border: none;
+  padding-top: 0px;
+}
+
+#profile{
+  padding-top: 60px;
+  background-color: none;
+  background-color: rgba(51, 51, 51, 0.9);
+}
+
+section .heading{
+  text-align: left;
+}
+
+#contact .container{
+  text-align: center;
+
+}
+
+.schools{
+  text-align: center;
+}
+
+.school{
+  text-align: center;
+  display: inline-table;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 20px;
+}
+
+.school-img{
+  height: 80px;
+  padding-right: 20px;
+}
+
+.contacts{
+  padding-left: 15%;
+}
+
+.contact-method{
+  border: none;
+  width: 10px;
+  display: inline-table;
+  padding-right: 7%;
+  padding-bottom: 2%;
+  height: 150px;
+}
+
+.contact-image{
+  height: 65px;
+  padding-bottom: 10px;
+}
+
+footer .container{
+  background-color: #222222;;
+  text-align: center;
+  width: 100%;
+  padding: 0 20px 0 20px;
+
+}
+
+footer p{
+  padding: 20px 0 20px 0;
+  font-size: 10px;
+}
+
+@media (max-width: 1003px){
+  header .title,
+  header nav,
+  header nav li,
+  section .heading{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header{
+    padding-bottom: 10px;
+  }
+
+
+  .contact-method{
+    display: block;
+    border: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .contacts{
+    padding: 0;
+  }
+
+  #profile{
+    padding-top: 10px;
+  }
+
+  #chet{
+    background-image: url("chet-main.jpg");
+
+  }
+
+  #chet h1{
+    padding-left: 5%;
+  }
+
+  .back{
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: solid;
+    border-bottom-color: #BB0000;
+    
+  }
+}
