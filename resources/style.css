@@ -16,24 +16,15 @@ body{
 
 .back{
   min-height: 350px;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: top;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   border-bottom: solid;
   border-bottom-color: #BB0000;
   padding-top: 40px;
 }
 
-#chet{
-  background-image: url("chet-big.png");
-}
-
-#chet h1{
-    color: #FFFFFF;
-    padding: 150px 0 0 20%;
-
-}
 
 a{
   text-decoration: none;
@@ -61,12 +52,14 @@ header{
   width: 100%;
   position: fixed;
   background-color: #222222;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
 header h1{
-  padding: 0;
+  padding: 2% 0 2% 0;
   margin: 0;
+  font-size: 30pt;
 }
 
 header li{
@@ -79,15 +72,17 @@ header li{
 header .title{
   float: left;
   padding: 0;
+
 }
 
 section{
   min-height: 200px;
+
 }
 
 nav{
   float: right;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .container{
@@ -115,10 +110,23 @@ section .container{
   padding-top: 0px;
 }
 
+
 #profile{
-  padding-top: 60px;
+  padding-top: 100px;
   background-color: none;
   background-color: rgba(51, 51, 51, 0.9);
+}
+
+#skills .container{
+  text-align: center;
+}
+
+.chart-contain{
+  border: none;
+  width: 45%;
+  display: inline-table;
+  height: 100px;
+  padding: 0 10px 30px 10px;
 }
 
 section .heading{
@@ -163,6 +171,11 @@ section .heading{
 .contact-image{
   height: 65px;
   padding-bottom: 10px;
+  transition: all .2s ease-in-out;
+}
+
+.contact-image:hover{
+  transform: scale(1.1);
 }
 
 footer .container{
@@ -225,6 +238,6 @@ footer p{
     background-repeat: no-repeat;
     border-bottom: solid;
     border-bottom-color: #BB0000;
-    
+
   }
 }
