@@ -3,15 +3,48 @@ html{
 }
 
 body{
-  background-color: #222222;
+  background-color: #FFFFFF;
   font-family: 'Roboto';
-  color: #FFFFFF;
+  color: #000000;
   overflow-x: hidden;
   overflow-y: auto;
   margin: 0 !important;
   padding: 0 !important;
 
 
+}
+
+.side-nav{
+  position: fixed;
+  padding-left: 90%;
+  padding-top: 25%;
+  text-align: right;
+}
+
+.side-nav ul{
+  list-style: square;
+}
+
+.side-nav ul li{
+  border: solid;
+  padding-bottom: 10px;
+}
+
+.side-nav ul li:hover{
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+
+}
+
+.menu-slide{
+  padding: none;
+  margin-right: 12px;
+  border: solid;
+  display: none;
+}
+
+.side-nav ul li:hover + .menu-slide{
+  display: block;
 }
 
 .back{
@@ -21,14 +54,14 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom: solid;
-  border-bottom-color: #BB0000;
+  border-bottom-color: #288edf;
   padding-top: 40px;
 }
 
 
 a{
   text-decoration: none;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 
@@ -40,7 +73,7 @@ li a:before{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #FFFFFF;
+  background-color: #288edf;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -61,19 +94,20 @@ ul{
 }
 
 .red{
-  color: #BB0000;
+  color: #288edf;
 }
 
 header{
-  border-bottom: solid;
-  border-color: #BB0000;
+  border-bottom: none;
+  border-color: #288edf;
   margin-top: -10px;
   min-height: 70px;
   width: 100%;
   position: fixed;
-  background-color: #222222;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
   z-index: 10;
+
 }
 
 header h1{
@@ -113,7 +147,7 @@ nav{
 }
 
 .heading{
-  color: #FFFFFF;
+  color: #000000;
 
 }
 
@@ -121,10 +155,10 @@ nav{
 section {
   padding-top: 10px;
   border: none;
-  background-color: rgba(51, 51, 51, 0.9);
-  border-bottom: solid;
-  border-color: #BB0000;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #f0f2f3;
+  border-bottom: none;
+  border-color: #288edf;
+
 }
 
 section .container{
@@ -134,12 +168,29 @@ section .container{
 }
 
 section .container h2{
+  text-align: center;
+  font-size: 20pt;
   opacity: 1;
+  color: #288edf;
+}
+
+#greeting{
+  height: 500px;
+}
+
+#greeting .entry-banner{
+  text-align: center;
+  padding-top: 12%;
+}
+
+#greeting .entry-banner h1{
+  font-size: 34pt;
 }
 
 #profile{
   padding-top: 100px;
-  background-image: url("wellington-sign.png");
+  background-color: #deeff8;
+  background-position: #f0f2f3;
   background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -147,15 +198,18 @@ section .container h2{
   z-index: 0;
 }
 
-#skills{
-  background-image: url("tech-skills.png");
-  background-color: #222222;
-  background-size: contain;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+#edu{
+  background-color: #f0f2f3;
+}
 
+
+#skills{
   z-index: 0;
+  background-color: #deeff8;
+}
+
+#contact{
+  background-color: #f0f2f3;
 }
 
 #skills .container{
@@ -221,13 +275,14 @@ section .heading{
   transform: scale(1.1);
 }
 
+
 footer .container{
-  background-color: #222222;;
   text-align: center;
   width: 100%;
   padding: 0 20px 0 20px;
-
 }
+
+
 
 footer p{
   padding: 20px 0 20px 0;
@@ -287,7 +342,7 @@ footer p{
     background-size: contain;
     background-repeat: no-repeat;
     border-bottom: solid;
-    border-bottom-color: #BB0000;
+    border-bottom-color: #288edf;
 
   }
 }
