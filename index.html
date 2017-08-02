@@ -18,11 +18,11 @@
   </header>
   <nav class="side-nav">
       <ul>
-          <li><span class="tool-tip">Profile</span><a href="#profile"><img src="resources/bullet.png" class="bullet"></img></a></li>
-          <li><span class="tool-tip">Education</span><a href="#edu"><img src="resources/bullet.png" class="bullet"></img></a></li>
-          <li><span class="tool-tip">Skills</span><a href="#skills"><img src="resources/bullet.png" class="bullet"></img></a></li>
+          <li><span class="tool-tip">Profile</span><a href="#profile"><img src="resources/bullet.png" class="bullet" id="prof-bul"></img></a></li>
+          <li><span class="tool-tip">Education</span><a href="#edu"><img src="resources/bullet.png" class="bullet" id="edu-bul"></img></a></li>
+          <li><span class="tool-tip">Skills</span><a href="#skills"><img src="resources/bullet.png" class="bullet" id="skills-bul"></img></a></li>
           <li><span class="tool-tip">Experience</span><img src="resources/bullet.png" class="bullet"></img></li>
-          <li><span class="tool-tip">Contact</span><a href="#contact"><img src="resources/bullet.png" class="bullet"></img></a></li>
+          <li><span class="tool-tip">Contact</span><a href="#contact"><img src="resources/bullet.png" class="bullet" id="con-bul"></img></a></li>
       </ul>
   </nav>
   <!--<section id="greeting">
@@ -32,7 +32,9 @@
       </div>
 
   </section>-->
+  <section id="buffer">
 
+  </section>
   <section id="profile">
     <div class="container" class="fade">
         <h2 class="heading">Profile</h2>
@@ -181,7 +183,6 @@
   </script>
   <script>
     $(function() {
-
       $('a[href*="#"]:not([href="#"])').click(function() {
         if(location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
@@ -196,10 +197,54 @@
       });
     });
   </script>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script>
-
+      $(document).ready(function() {
+        $(window).scroll( function(){
+            $('section').each( function(i){
+                var objectTop = $(this).offset().top;
+                var objectBottom = $(this).offset().top + $(this).offset().length;
+                var pageMid = $(window).scrollTop() + $(window).height()/2;
+                if( objectTop <= pageMid ){
+                    $(this).animate({'opacity':'1'}, 800);
+                }
+            });
+        });
+      });
   </script>
+  <script>
+      $(document).ready(function(){
+        $(window).scroll(function() {
+          var viewTop = $('#head').height() -30;
+          var viewBottom = $(window).height()/3;
+
+          var profDist = $('#profile').offset().top - $(window).scrollTop() ;
+          
+          if(profDist < viewBottom && profDist > viewTop){
+            $('#prof-bul').css("filter", "none");
+          }else{
+            $('#prof-bul').css("filter", "grayscale(100%)");
+          }
+          var eduDist = $('#edu').offset().top - $(window).scrollTop() ;
+          if(eduDist < viewBottom && eduDist > viewTop){
+            $('#edu-bul').css("filter", "none");
+          }else{
+            $('#edu-bul').css("filter", "grayscale(100%)");
+          }
+          var skillsDist = $('#skills').offset().top - $(window).scrollTop() ;
+          if(skillsDist < viewBottom && skillsDist > viewTop){
+            $('#skills-bul').css("filter", "none");
+          }else{
+            $('#skills-bul').css("filter", "grayscale(100%)");
+          }
+          var conDist = $('#contact').offset().top - $(window).scrollTop() ;
+          if(conDist < viewBottom && conDist > viewTop){
+            $('#con-bul').css("filter", "none");
+          }else{
+            $('#con-bul').css("filter", "grayscale(100%)");
+          }
+        });
+      });
+</script>
 </body>
 </html>

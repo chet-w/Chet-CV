@@ -23,6 +23,8 @@ body{
 
 .bullet{
   height: 10px;
+  transition: all 0.2s ease;
+  filter: grayscale(100%);
 }
 
 .side-nav ul{
@@ -146,33 +148,19 @@ header .title{
 
 section{
   min-height: 200px;
-
-}
-
-section .container{
-  visibility: hidden;
-  animation: fade-in 5s 1;
-
-}
-
-@keyframes fade-in {
-    0%   {opacity: 0;}
-    25%  {opacity: 0.25;}
-    50%  {opacity: 0.5;}
-    75%  {opacity: 0.75;}
-    100% {opacity: 1;}
+  opacity: 0;
 }
 
 nav{
   float: right;
   margin-top: 25px;
+  z-index: 10;
 }
 
 .container{
   width: 80%;
   margin: auto;
   padding-top: 20px;
-
 }
 
 .heading{
@@ -216,8 +204,13 @@ section .container h2{
   font-size: 34pt;
 }
 
+#buffer{
+  min-height: 60px;
+  border: solid;
+  border-color: black;
+}
+
 #profile{
-  padding-top: 100px;
   background-color: #deeff8;
   background-position: #f0f2f3;
   background-position: top;
@@ -225,6 +218,7 @@ section .container h2{
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 0;
+  opacity: 1;
 }
 
 #edu{
