@@ -29,6 +29,17 @@ body{
 
 .side-nav ul{
   list-style: none;
+  animation-name: hide-bullet;
+  opacity: 0;
+  animation-delay: 7s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes hide-bullet{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .side-nav ul li{
@@ -235,7 +246,7 @@ section .container h2{
 }
 
 @keyframes landing {
-    0% {transform: rotate(0deg); opacity: 1;}
+    0% {transform: rotate(0deg); opacity: 0;}
     50% {transform: rotate(720deg); opacity: 1;}
     70% {transform: scaleX(6); opacity: 1; background-image: none;}
     90% {transform: scaleX(6); opacity: 1; background-image: none;}
