@@ -27,8 +27,8 @@ body{
 
 .side-nav{
   position: fixed;
-  padding-left: 95%;
-  padding-top: 25%;
+  left: 95%;
+    top: 40%;
   text-align: right;
 }
 
@@ -357,6 +357,49 @@ section .heading{
   transform: scale(1.1);
 }
 
+form label{
+    font-size: 15pt;
+    
+}
+
+form input, form textarea{
+    width: 80%;
+    font-size: 12pt;
+    font-family: 'Roboto', sans-serif;
+    border: solid;
+    border-color: aliceblue;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    transition-property: border-color;
+    padding: 1% 1% 1% 1%;
+    outline: none;
+    
+    
+}
+
+form input:hover, form textarea:hover{
+    border-color: #288edf;
+    
+}
+
+
+
+form input:focus, form textarea:focus{
+    border-color: #288edf;
+}
+
+
+
+form button{
+    background-color: #288edf;
+    color: #FFFFFF;
+    padding: 2% 2% 2% 2%;
+    width: 83%;
+    border: solid;
+    
+    margin-top: 10px;
+    
+}
 
 
 
@@ -382,6 +425,11 @@ footer p{
     text-align: center;
     width: 100%;
   }
+  
+    
+    nav{
+        display: none;
+    }
 
   header{
     padding-bottom: 10px;
@@ -411,13 +459,7 @@ footer p{
     padding: 0;
   }
 
-  #profile{
-    padding-top: 30%;
-  }
 
-  #skills{
-    background-image: url("prof-skills.png");
-  }
 
   .back{
     min-height: 400px;

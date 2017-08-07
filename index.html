@@ -3,7 +3,7 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="resources/style.css" rel="stylesheet" >
-  <link rel="icon" href="icon.png">
+  <link rel="icon" href="resources/icon.png">
   <meta  name="viewport" content="width=device-width"></meta>
   <title>Chethana Wijesekera</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -84,8 +84,30 @@
               <a href="https://gitlab.ecs.vuw.ac.nz/wijesechet">gitlab.ecs.vuw.ac.nz/<br>wijesechet</a>
           </div>
           <div class="submit">
-              <form>
-                  <label></label>
+            <form id="gform" method="POST" class="pure-form pure-form-stacked"
+              action="https://script.google.com/macros/s/AKfycbxLF8IzDCcrVTu-HJERehEo6lVgYpD-O6pw373jz7e2_xwHAI6g/exec">
+                
+                  <label for="name">Name: </label><br>
+                  <input id="name" name="name" placeholder="Whats your name?" /><br>
+                
+
+                
+                  <label for="message">Message: </label><br>
+                  <textarea id="message" name="message" rows="10"
+                  placeholder="Tell us what's on your mind..."></textarea><br>
+               
+
+                
+                  <label for="email"><em>Your</em> Email Address:</label><br>
+                  <input id="email" name="email" type="email" value=""
+                  required placeholder="your.name@email.com"/><br>
+                  
+                
+
+                <button onclick="modal()">
+                    Send
+                </button>
+
               </form>
           </div>
         </div>
@@ -96,6 +118,8 @@
         <p>Chethana Wijesekera, Copyright &copy; 2017</p>
     </div>
   </footer>
+    <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
   <script>
     var ctx = document.getElementById("technical");
@@ -198,6 +222,12 @@
     });
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $(this).scrollTop(0);
+    });
+  </script>
   <script>
       $(document).ready(function() {
         $(window).scroll( function(){
@@ -246,5 +276,6 @@
         });
       });
 </script>
+
 </body>
 </html>
