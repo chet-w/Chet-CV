@@ -136,6 +136,10 @@ ul{
   color: #288edf;
 }
 
+.black{
+    color: #000000;
+}
+
 header{
   border-bottom: none;
   border-color: #288edf;
@@ -226,7 +230,7 @@ section .container h2{
 }
 
 #landing{
-  height: 500px;
+  height: 800px;
   background-color: #FFFFFF;
   opacity: 1;
   text-align: center;
@@ -334,36 +338,45 @@ section .heading{
   padding-right: 20px;
 }
 
-.contacts{
-  padding-left: 15%;
-}
 
 .contact-method{
   border: none;
-  width: 10px;
+  width: 200px;
   display: inline-table;
-  padding-right: 7%;
   padding-bottom: 2%;
   height: 150px;
 }
 
 .contact-image{
   height: 65px;
-  padding-bottom: 10px;
+  width: 65px;
   transition: all .2s ease-in-out;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 10px;
+  
 }
 
+
 .contact-image:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+h3{
+    color: #288edf;
+    font-size: 15pt;
+}
+
+form{
+    transition: all 2s ease;
 }
 
 form label{
-    font-size: 15pt;
+    font-size: 13pt;
     
 }
 
 form input, form textarea{
-    width: 80%;
+    width: 50%;
     font-size: 12pt;
     font-family: 'Roboto', sans-serif;
     border: solid;
@@ -373,7 +386,8 @@ form input, form textarea{
     transition-property: border-color;
     padding: 1% 1% 1% 1%;
     outline: none;
-    
+    margin-bottom: 5px;
+
     
 }
 
@@ -394,11 +408,11 @@ form button{
     background-color: #288edf;
     color: #FFFFFF;
     padding: 2% 2% 2% 2%;
-    width: 83%;
-    border: solid;
-    
+    width: 53%;
+    border: none;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
     margin-top: 10px;
-    
+    cursor: pointer;
 }
 
 

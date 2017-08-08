@@ -1,281 +1,120 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link href="resources/style.css" rel="stylesheet" >
-  <link rel="icon" href="resources/icon.png">
-  <meta  name="viewport" content="width=device-width"></meta>
-  <title>Chethana Wijesekera</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-</head>
-<body>
-
-  <header id='head'>
-      <div class="container">
-          <div class="title"><h1>Chethana <span class="red">Wijesekera</span></h1></div>
-      </div>
-
-  </header>
-  <nav class="side-nav">
-      <ul>
-          <li><span class="tool-tip">Profile</span><a href="#profile"><img src="resources/bullet.png" class="bullet" id="prof-bul"></img></a></li>
-          <li><span class="tool-tip">Education</span><a href="#edu"><img src="resources/bullet.png" class="bullet" id="edu-bul"></img></a></li>
-          <li><span class="tool-tip">Skills</span><a href="#skills"><img src="resources/bullet.png" class="bullet" id="skills-bul"></img></a></li>
-          <li><span class="tool-tip">Experience</span><img src="resources/bullet.png" class="bullet"></img></li>
-          <li><span class="tool-tip">Contact</span><a href="#contact"><img src="resources/bullet.png" class="bullet" id="con-bul"></img></a></li>
-      </ul>
-  </nav>
-
-  <section id="buffer">
-
-  </section>
-  <section id="landing">
-      <div class="container">
-          <div id="animate"></div>
-      </div>
-  </section>
-  <section id="profile">
-    <div class="container" class="fade">
-        <h2 class="heading">Profile</h2>
-    </div>
-  </section>
-  <section id="edu">
-    <div class="container" class="fade">
-        <h2 class="heading">Education</h2>
-        <div class="schools">
-            <div class="school">
-                <img src="./resources/school2.png" class="school-img"><br>
-                Victoria University of Wellington<br>(Mar 2015 - present)
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link href="css/style.css" rel="stylesheet" >
+      <link rel="icon" href="images/icon.png">
+      <meta  name="viewport" content="width=device-width"></meta>
+      <title>Chethana Wijesekera</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <header id='head'>
+          <div class="container">
+              <div class="title"><h1>Chethana <span class="red">Wijesekera</span></h1></div>
+          </div>
+      </header>
+      <nav class="side-nav">
+          <ul>
+              <li><span class="tool-tip">Profile</span><a href="#profile"><img src="images/bullet.png" class="bullet" id="prof-bul"></img></a></li>
+              <li><span class="tool-tip">Education</span><a href="#edu"><img src="images/bullet.png" class="bullet" id="edu-bul"></img></a></li>
+              <li><span class="tool-tip">Skills</span><a href="#skills"><img src="images/bullet.png" class="bullet" id="skills-bul"></img></a></li>
+              <li><span class="tool-tip">Experience</span><img src="images/bullet.png" class="bullet"></img></li>
+              <li><span class="tool-tip">Contact</span><a href="#contact"><img src="images/bullet.png" class="bullet" id="con-bul"></img></a></li>
+          </ul>
+      </nav>
+      <section id="buffer"></section>
+      <section id="landing">
+          <div class="container">
+              <div id="animate"></div>
+          </div>
+      </section>
+      <section id="profile">
+        <div class="container" class="fade">
+            <h2 class="heading">Profile</h2>
+            <p>I am a highly motivated infividinual who eworks industrialious and effeicintly independantly or alonside others in a team envisroment. I also am a reslient performer with fasthinging problem sloeving abilities with flexibility to take leadership or my own initiative. I oride yself in my posibtie an entuhusiantis attitude to any task presentaed to me and i hope to fuither prove myself in your given vacentcy.</p>
+        </div>
+      </section>
+      <section id="edu">
+        <div class="container" class="fade">
+            <h2 class="heading">Education</h2>
+            <div class="schools">
+                <div class="school">
+                    <img src="./images/school2.png" class="school-img"><br>
+                    Victoria University of Wellington<br>(Mar 2015 - present)<br><br>
+                    Bachelor of Science<br>Majoring in Computer Science <br>& Information Systems
+                </div>
+                <div class="school">
+                    <img src="./images/school2.png" class="school-img"><br>
+                    Upper Hutt College<br>(Feb 2010 - Nov 2014)<br><br>
+                    NCEA Levels 1, 2, 3
+                </div>
             </div>
-            <div class="school">
-                <img src="./resources/school2.png" class="school-img"><br>
-                Upper Hutt College<br>(Feb 2010 - Nov 2014)
+        </div>
+      </section>
+      <section id="skills">
+        <div class="container" class="fade">
+            <h2 class="heading">Skills</h2>
+            <div class="chart-contain">
+                <canvas id="technical" width="400" height="250"></canvas>
+            </div>
+            <div class="chart-contain">
+                <canvas id="professional" width="400" height="250"></canvas>
             </div>
         </div>
-    </div>
-  </section>
-  <section id="skills">
-    <div class="container" class="fade">
-        <h2 class="heading">Skills</h2>
-        <div class="chart-contain">
-            <canvas id="technical" width="400" height="250"></canvas>
+      </section>
+      <section id="contact">
+        <div class="container" class="fade">
+            <h2 class="heading">Contact</h2>
+            <div class="contacts">
+              <div class="contact-method">
+                  <a href="tel:+64279253411"><img src="./images/phone-c.png" class="contact-image"></a><br>
+                  <a href="tel:+64279253411">027 925 3411</a>
+              </div>
+              <div class="contact-method">
+                  <a href="mailto:chethana96@gmail.com"><img src="./images/email-c.png" class="contact-image"></a><br>
+                  <a href="mailto:chethana96@gmail.com">chethana96@gmail.com</a>
+              </div>
+              <div class="contact-method">
+                  <a href="https://github.com/warmdad"><img src="./images/git-c2.png" class="contact-image"></a><br>
+                  <a href="https://github.com/warmdad">github.com/warmdad</a>
+              </div>
+            </div>
+            <div class="submit">
+                <h3>Get in Touch!</h3>
+                <form id="gform" method="POST" class="pure-form pure-form-stacked"
+                  action="https://script.google.com/macros/s/AKfycbxLF8IzDCcrVTu-HJERehEo6lVgYpD-O6pw373jz7e2_xwHAI6g/exec">
+                      <label for="name">Name</label><br>
+                      <input id="name" name="name" placeholder="Whats your name?" /><br>
+                      <label for="message">Message</label><br>
+                      <textarea id="message" name="message" rows="10"
+                      placeholder="Leave a message..."></textarea><br>
+                      <label for="email">Email Address</label><br>
+                      <input id="email" name="email" type="email" value=""
+                      required placeholder="your.name@email.com"/><br>
+                    <button onclick="modal()">Send Email <i class="fa fa-paper-plane"></i></button>
+                  </form>
+                <div style="display:none;" id="thankyou_message">
+                    <h2><span class="black">Thanks for the email!</span><br>I'll be in touch soon.</h2>
+                </div>
+              </div>
         </div>
-        <div class="chart-contain">
-            <canvas id="professional" width="400" height="250"></canvas>
+      </section>
+      <footer>
+        <div class="container">
+            <p>Chethana Wijesekera, Copyright &copy; 2017</p>
         </div>
-
-    </div>
-  </section>
-  <section id="contact">
-    <div class="container" class="fade">
-        <h2 class="heading">Contact</h2>
-        <div class="contacts">
-          <div class="contact-method">
-              <a href="tel:+64279253411"><img src="./resources/phone2.png" class="contact-image"></a><br>
-              <a href="tel:+64279253411">027 925 3411</a>
-          </div>
-          <div class="contact-method">
-              <a href="mailto:chethana96@gmail.com"><img src="./resources/email.png" class="contact-image"></a><br>
-              <a href="mailto:chethana96@gmail.com">chethana96@gmail.com</a>
-          </div>
-          <div class="contact-method">
-              <a href="https://gitlab.ecs.vuw.ac.nz/wijesechet"><img src="./resources/git.png" class="contact-image"></a><br>
-              <a href="https://gitlab.ecs.vuw.ac.nz/wijesechet">gitlab.ecs.vuw.ac.nz/<br>wijesechet</a>
-          </div>
-          <div class="submit">
-            <form id="gform" method="POST" class="pure-form pure-form-stacked"
-              action="https://script.google.com/macros/s/AKfycbxLF8IzDCcrVTu-HJERehEo6lVgYpD-O6pw373jz7e2_xwHAI6g/exec">
-                
-                  <label for="name">Name: </label><br>
-                  <input id="name" name="name" placeholder="Whats your name?" /><br>
-                
-
-                
-                  <label for="message">Message: </label><br>
-                  <textarea id="message" name="message" rows="10"
-                  placeholder="Tell us what's on your mind..."></textarea><br>
-               
-
-                
-                  <label for="email"><em>Your</em> Email Address:</label><br>
-                  <input id="email" name="email" type="email" value=""
-                  required placeholder="your.name@email.com"/><br>
-                  
-                
-
-                <button onclick="modal()">
-                    Send
-                </button>
-
-              </form>
-          </div>
-        </div>
-    </div>
-  </section>
-  <footer>
-    <div class="container">
-        <p>Chethana Wijesekera, Copyright &copy; 2017</p>
-    </div>
-  </footer>
-    <script data-cfasync="false" type="text/javascript"
-src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-  <script>
-    var ctx = document.getElementById("technical");
-    var myChart = new Chart(ctx, {
-        type: 'horizontalBar',
-        scaleFontColor: "#FFFFFF",
-        data: {
-            labels: ["HTML/CSS", "Java", "Python", "Green", "Purple", "Orange"],
-            datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                label: "Technical Skills",
-                fill: false,
-                backgroundColor: "rgba(40, 142, 223, 1)",
-                borderCapStyle: 'butt',
-                borderDash: [],
-                borderDashOffset: 0.0,
-                borderJoinStyle: 'miter',
-
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        fontColor: 'black'
-                    }
-                }],
-                xAxes: [{
-                  ticks: {
-                    fontColor: "black",
-                    beginAtZero:true
-                  }
-                }]
-            },
-            legend: {
-              labels: {
-                fontColor: 'black'
-              }
-            }
-        }
-    });
-  </script>
-  <script>
-    var ctx = document.getElementById("professional");
-    var myChart = new Chart(ctx, {
-        type: 'horizontalBar',
-        scaleFontColor: "#FFFFFF",
-        data: {
-            labels: ["Office Suite", "Adobe Suite", "Python", "Green", "Purple", "Orange"],
-            datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                label: "Professional Skills",
-                fill: false,
-                backgroundColor: "rgba(40, 142, 223, 1)",
-                borderCapStyle: 'butt',
-                borderDash: [],
-                borderDashOffset: 0.0,
-                borderJoinStyle: 'miter',
-
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        fontColor: 'black'
-                    }
-                }],
-                xAxes: [{
-                  ticks: {
-                    fontColor: 'black',
-                    beginAtZero:true
-                  }
-                }]
-            },
-            legend: {
-              labels: {
-                fontColor: 'black'
-              }
-            }
-        }
-    });
-  </script>
-  <script>
-    $(function() {
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if(location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          if(target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top - 60
-            }, 300);
-            return false;
-          }
-        }
-      });
-    });
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-  <script>
-    $(document).ready(function(){
-      $(this).scrollTop(0);
-    });
-  </script>
-  <script>
-      $(document).ready(function() {
-        $(window).scroll( function(){
-            $('section').each( function(i){
-                var objectTop = $(this).offset().top;
-                var objectBottom = $(this).offset().top + $(this).offset().length;
-                var pageMid = $(window).scrollTop() + $(window).height()/2;
-                if( objectTop <= pageMid ){
-                    $(this).animate({'opacity':'1'}, 800);
-                }
-            });
-        });
-      });
-  </script>
-  <script>
-      $(document).ready(function(){
-        $(window).scroll(function() {
-          var viewTop = $('#head').height() -30;
-          var viewBottom = $(window).height()/3;
-
-          var profDist = $('#profile').offset().top - $(window).scrollTop() ;
-
-          if(profDist < viewBottom && profDist > viewTop){
-            $('#prof-bul').css("filter", "none");
-          }else{
-            $('#prof-bul').css("filter", "grayscale(100%)");
-          }
-          var eduDist = $('#edu').offset().top - $(window).scrollTop() ;
-          if(eduDist < viewBottom && eduDist > viewTop){
-            $('#edu-bul').css("filter", "none");
-          }else{
-            $('#edu-bul').css("filter", "grayscale(100%)");
-          }
-          var skillsDist = $('#skills').offset().top - $(window).scrollTop() ;
-          if(skillsDist < viewBottom && skillsDist > viewTop){
-            $('#skills-bul').css("filter", "none");
-          }else{
-            $('#skills-bul').css("filter", "grayscale(100%)");
-          }
-          var conDist = $('#contact').offset().top - $(window).scrollTop() ;
-          if(conDist < viewBottom && conDist > viewTop){
-            $('#con-bul').css("filter", "none");
-          }else{
-            $('#con-bul').css("filter", "grayscale(100%)");
-          }
-        });
-      });
-</script>
-
-</body>
+      </footer>
+        <script data-cfasync="false" type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+      <script src="scripts/tech-skills-chart.js"></script>
+      <script src="scripts/prof-skills-chart.js"></script>
+      <script src="scripts/smooth-scroll.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="scripts/load-top.js"></script>
+      <script src="scripts/fade-in.js"></script>
+      <script src="scripts/nav-effects.js"></script>
+    </body>
 </html>
