@@ -216,10 +216,12 @@ section {
 
 }
 
+
 section .container{
   border: none;
   padding: 30px 0 50px 0;
   opacity: 1;
+    text-align: center;
 }
 
 section .container h2{
@@ -282,6 +284,16 @@ section .container h2{
   background-size: contain;
   z-index: 0;
   opacity: 1;
+
+}
+
+.text{
+    border-left: solid;
+    border-right: solid;
+    border-color: #288edf;
+    width: 80%;
+    margin-left: 7.5%;
+    padding: 0 20px 0 20px;
 }
 
 #edu{
@@ -292,6 +304,25 @@ section .container h2{
 #skills{
   z-index: 0;
   background-color: #deeff8;
+}
+
+.exp{
+    width: 100%;
+    border: none;
+    display: inline-block;
+}
+
+#experience{
+    background-color: #f0f2f3;
+}
+
+#nl-logo{
+    width: 20%;
+    padding-bottom: 15px;
+}
+
+#work{
+    background-color: #deeff8;
 }
 
 #contact{
@@ -331,6 +362,12 @@ section .heading{
   padding-right: 10%;
   padding-left: 10%;
   padding-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.school:hover{
+    transform: scale(1.1);
+    
 }
 
 .school-img{
@@ -350,7 +387,7 @@ section .heading{
 .contact-image{
   height: 65px;
   width: 65px;
-  transition: all .2s ease-in-out;
+  transition: all .2s ease;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 10px;
   
@@ -366,8 +403,22 @@ h3{
     font-size: 15pt;
 }
 
+.download{
+    overflow: hidden;
+}
+
+#dl{
+    height: 20px;
+    padding-left: 5px;
+    transition: all 0.5s ease;
+}
+
+
+
+
 form{
     transition: all 2s ease;
+    opacity: 1;
 }
 
 form label{
@@ -404,7 +455,7 @@ form input:focus, form textarea:focus{
 
 
 
-form button{
+button{
     background-color: #288edf;
     color: #FFFFFF;
     padding: 2% 2% 2% 2%;
@@ -413,9 +464,21 @@ form button{
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
     margin-top: 10px;
     cursor: pointer;
+    overflow: hidden;
+}
+
+#thankyou_message{
+    animation: all 1s ease;
 }
 
 
+#plane{
+    transition: all 1s ease;
+}
+
+.move{
+    transform: translate(100px, -100px);
+}
 
 footer .container{
   text-align: center;

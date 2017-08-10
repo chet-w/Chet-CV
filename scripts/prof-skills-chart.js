@@ -3,10 +3,9 @@ var ctx = document.getElementById("professional");
         type: 'horizontalBar',
         scaleFontColor: "#FFFFFF",
         data: {
-            labels: ["Office Suite", "Adobe Suite", "Python", "Green", "Purple", "Orange"],
+            labels: ["Leadership", "Working in a Team", "Communication", "Initiative", "Problem Solving"],
             datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
+                data: [8, 9, 8, 8, 8],
                 label: "Professional Skills",
                 fill: false,
                 backgroundColor: "rgba(40, 142, 223, 1)",

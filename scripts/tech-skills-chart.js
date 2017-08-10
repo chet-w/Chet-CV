@@ -3,10 +3,9 @@ var ctx = document.getElementById("technical");
         type: 'horizontalBar',
         scaleFontColor: "#FFFFFF",
         data: {
-            labels: ["HTML/CSS", "Java", "Python", "Green", "Purple", "Orange"],
+            labels: ["HTML/CSS", "Java", "Angular2", "Python", "JavaScript", "SQL"],
             datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
+                data: [9, 9, 7, 7, 7, 7],
                 label: "Technical Skills",
                 fill: false,
                 backgroundColor: "rgba(40, 142, 223, 1)",
