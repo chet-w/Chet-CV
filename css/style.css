@@ -5,7 +5,7 @@ html{
   animation-duration: 0.1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
-  animation-delay: 5s
+  animation-delay: 4s
 }
 
 @keyframes add-overflow{
@@ -338,7 +338,7 @@ section .container h2{
     padding-bottom: 15px;
 }
 
-#work{
+#portfolio{
     background-color: #deeff8;
 }
 
