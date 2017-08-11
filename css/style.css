@@ -5,7 +5,7 @@ html{
   animation-duration: 0.1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
-  animation-delay: 15s
+  animation-delay: 5s
 }
 
 @keyframes add-overflow{
@@ -44,7 +44,7 @@ body{
   list-style: none;
   animation-name: hide-bullet;
   opacity: 0;
-  animation-delay: 12s;
+  animation-delay: 5.5s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -157,7 +157,7 @@ header{
   visibility: hidden;
   opacity: 0;
   animation-name: head;
-  animation-delay: 12s;
+  animation-delay: 3.5s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -241,7 +241,7 @@ section .container h2{
   opacity: 1;
   text-align: center;
   animation-name: fold;
-  animation-delay: 5s;
+  animation-delay: 3.5s;
   animation-duration: 1.5s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
@@ -255,8 +255,7 @@ section .container h2{
   margin-left: 45%;
   margin-top: 15%;
   animation-name: landing;
-  animation-fill-mode: forwards;
-  animation-duration: 8s;
+  animation-duration: 3.5s;
   text-align: center;
   opacity: 0;
 }
@@ -264,17 +263,13 @@ section .container h2{
 #animate h1{
     padding: 25% 0 25% 0;
     font-size: 35pt;
-    animation: animate-text;
-    animation-delay: 7s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    animation: landing-text;
+    color: #ffffff;
 }
 
 
-@keyframes animate-text {
-    0% {letter-spacing: normal;}
-    100% {letter-spacing: 1000px;}
-}
+@keyframes landing text;
+
 
 @keyframes fold {
   0% {min-height: auto;}
@@ -284,12 +279,11 @@ section .container h2{
 
 
 @keyframes landing {
-    0% {transform: rotate(0deg); opacity: 0;  padding: 0 0 0 0;  background-color: #288edf;}
-    25% {transform: rotate(720deg); opacity: 1;  padding: 0 0 0 0;  background-color: #288edf;}
-    35% {transform: rotate(720deg); opacity: 1; padding: 0 300px 0 300px; transform: translate(-300px, 0px); background-color: #288edf;}
-    50% {transform: rotate(720deg); opacity: 1; padding: 0 300px 0 300px; transform: translate(-300px, -250px); background-color: #288edf;}
-    65% {transform: rotate(720deg); opacity: 1; padding: 0 100% 0 50%; transform: translate(-500px, -250px); background-color: #288edf;}
-    100% {transform: rotate(720deg); opacity: 1; padding: 0 100% 0 50%; transform: translate(-500px, -250px); background-color: #ffffff;}
+    0% {transform: rotate(0deg); opacity: 0; padding: 0 0 0 0;}
+    50% {transform: rotate(720deg); opacity: 1; padding: 0 0 0 0;}
+    70% {padding: 0 300px 0 300px; transform: translate(-300px, 0px); opacity: 1; background-image: none;}
+    90% {padding: 0 300px 0 300px; transform: translate(-300px, 0px);  opacity: 1; background-image: none;}
+    100% {padding: 0 300px 0 300px; transform: translate(-300px, 0px);  opacity: 0;}
 }
 
 #buffer{
@@ -522,6 +516,8 @@ button:hover{
 .move{
     transform: translate(100px, -100px);
 }
+
+
 
 footer .container{
   text-align: center;
