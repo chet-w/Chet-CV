@@ -560,58 +560,70 @@ footer p{
 }
 
 @media (max-width: 1003px){
-  header .title,
-  header nav,
-  header nav li,
-  section .heading{
-    float: none;
-    text-align: center;
-    width: 100%;
-  }
-  
-    
-    nav{
+    header .title,
+    header nav,
+    header nav li,
+    section .heading{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+        
+    .top-icons, nav {
         display: none;
     }
-
-  header{
-    padding-bottom: 10px;
-  }
-
-  body{
-    font-size: 20pt;
-  }
-
-  section h2{
-    font-size: 40pt;
-  }
-
-  section{
-    width: 115%;
-  }
-
-
-  .contact-method{
-    display: block;
-    border: none;
-    width: 100%;
-    padding: 0;
-  }
-
-  .contacts{
-    padding: 0;
-  }
-
-
-
-  .back{
-    min-height: 400px;
-    background-attachment: fixed;
-    background-position: top;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-bottom: solid;
-    border-bottom-color: #288edf;
-
-  }
+    
+    header{
+        position: relative;
+    }
+    
+    #landing, #buffer{
+        min-height: 0px;
+    }
+    
+    section .container{
+        margin: 0;
+        width: 100%;
+    }
+    
+    section .text{
+        width: 90%;
+        margin: 0;
+    
+    }
+    
+    button{
+        width: 90%;
+        padding: 20px 20px 20px 20px;
+    }
+    
+    form input{
+        width: 88%;
+        padding: 10px;
+    }
+    
+    form textarea{
+        width: 88%;
+        padding: 10px;
+    }
+    
+    .gallery-image{
+        display: block;
+        margin: 10px;
+        width: 70%;
+        margin-left: 15%
+    }
+    
+    .contact-image{
+        height: 90px;
+        width: 90px;
+    }
+    
+    .contact-method{
+        display: block;
+        margin-left: 27.5%
+    }
+    
+    
+    
 }
