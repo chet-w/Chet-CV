@@ -351,10 +351,6 @@ section .container h2{
     background-color: #f0f2f3;
 }
 
-#nl-logo{
-    width: 20%;
-    padding-bottom: 15px;
-}
 
 #portfolio{
     background-color: #deeff8;
@@ -552,11 +548,15 @@ footer .container{
   padding: 0 20px 0 20px;
 }
 
-
+footer .bottom-icons{
+    margin: 20px;
+    display: none;
+}
 
 footer p{
   padding: 20px 0 20px 0;
   font-size: 10px;
+    
 }
 
 @media (max-width: 1003px){
@@ -619,11 +619,21 @@ footer p{
         width: 90px;
     }
     
-    .contact-method{
-        display: block;
-        margin-left: 27.5%
+    .contacts{
+        margin: 0;
+        padding: 0;
     }
     
+    .contact-method{
+        display: block;
+        margin: 0 30%;
+    }
     
+    footer .bottom-icons{
+        display: block;
+    }
     
+    footer p{
+        padding: 0 0 20px 0;
+    }
 }
