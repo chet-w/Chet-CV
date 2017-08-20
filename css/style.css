@@ -1,11 +1,22 @@
 html{
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow-y: hidden;
-  animation-name: add-overflow;
-  animation-duration: 0.1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease;
-  animation-delay: 4s
+  -webkit-animation-name: add-overflow;
+          animation-name: add-overflow;
+  -webkit-animation-duration: 0.1s;
+          animation-duration: 0.1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s
+}
+
+@-webkit-keyframes add-overflow{
+  0% {overflow-y: hidden;}
+  100% {overflow-y: scroll;}
 }
 
 @keyframes add-overflow{
@@ -34,20 +45,34 @@ body{
 
 .bullet{
   height: 10px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  filter: grayscale(100%);
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
 
 }
 
 .side-nav ul{
   list-style: none;
-  animation-name: hide-bullet;
+  -webkit-animation-name: hide-bullet;
+          animation-name: hide-bullet;
   opacity: 0;
-  animation-delay: 5.5s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes hide-bullet{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 @keyframes hide-bullet{
@@ -63,8 +88,12 @@ body{
 
 
 .side-nav ul li:hover{
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
   transition: all .2s ease;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 
 }
 
@@ -87,6 +116,8 @@ body{
 
     /* Fade in tooltip */
     opacity: 0;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
     transition: opacity 1s;
 }
 
@@ -100,7 +131,9 @@ body{
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -152,15 +185,27 @@ header{
   width: 100%;
   position: fixed;
   background-color: #FFFFFF;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
   z-index: 10;
   visibility: hidden;
   opacity: 0;
-  animation-name: head;
-  animation-delay: 3.5s;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease;
+  -webkit-animation-name: head;
+          animation-name: head;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes head {
+  0% {visibility: visible; opacity: 0;}
+  100% {visibility: visible; opacity: 1;}
+
 }
 
 @keyframes head {
@@ -179,12 +224,16 @@ header{
 .top-icon{
     height: 30px;
     padding: 0 5px 0 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
         
 }
 
 .top-icon:hover{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 header h1{
@@ -258,11 +307,16 @@ section .container h2{
   background-color: #FFFFFF;
   opacity: 1;
   text-align: center;
-  animation-name: fold;
-  animation-delay: 3.5s;
-  animation-duration: 1.5s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: fold;
+          animation-name: fold;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #animate{
@@ -272,8 +326,10 @@ section .container h2{
   background-color: #288edf;
   margin-left: 45%;
   margin-top: 15%;
-  animation-name: landing;
-  animation-duration: 3.5s;
+  -webkit-animation-name: landing;
+          animation-name: landing;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
   text-align: center;
   opacity: 0;
 }
@@ -281,12 +337,23 @@ section .container h2{
 #animate h1{
     padding: 25% 0 25% 0;
     font-size: 35pt;
-    animation: landing-text;
+    -webkit-animation: landing-text;
+            animation: landing-text;
     color: #ffffff;
 }
 
 
+@-webkit-keyframes landing text;
+
+
 @keyframes landing text;
+
+
+@-webkit-keyframes fold {
+  0% {min-height: auto;}
+  100% {min-height: 0px;
+        height: 0px;}
+}
 
 
 @keyframes fold {
@@ -296,12 +363,21 @@ section .container h2{
 }
 
 
+@-webkit-keyframes landing {
+    0% {-webkit-transform: rotate(0deg);transform: rotate(0deg); opacity: 0; padding: 0 0 0 0;}
+    50% {-webkit-transform: rotate(720deg);transform: rotate(720deg); opacity: 1; padding: 0 0 0 0;}
+    70% {padding: 0 300px 0 300px; -webkit-transform: translate(-300px, 0px); transform: translate(-300px, 0px); opacity: 1; background-image: none;}
+    90% {padding: 0 300px 0 300px; -webkit-transform: translate(-300px, 0px); transform: translate(-300px, 0px);  opacity: 1; background-image: none;}
+    100% {padding: 0 300px 0 300px; -webkit-transform: translate(-300px, 0px); transform: translate(-300px, 0px);  opacity: 0;}
+}
+
+
 @keyframes landing {
-    0% {transform: rotate(0deg); opacity: 0; padding: 0 0 0 0;}
-    50% {transform: rotate(720deg); opacity: 1; padding: 0 0 0 0;}
-    70% {padding: 0 300px 0 300px; transform: translate(-300px, 0px); opacity: 1; background-image: none;}
-    90% {padding: 0 300px 0 300px; transform: translate(-300px, 0px);  opacity: 1; background-image: none;}
-    100% {padding: 0 300px 0 300px; transform: translate(-300px, 0px);  opacity: 0;}
+    0% {-webkit-transform: rotate(0deg);transform: rotate(0deg); opacity: 0; padding: 0 0 0 0;}
+    50% {-webkit-transform: rotate(720deg);transform: rotate(720deg); opacity: 1; padding: 0 0 0 0;}
+    70% {padding: 0 300px 0 300px; -webkit-transform: translate(-300px, 0px); transform: translate(-300px, 0px); opacity: 1; background-image: none;}
+    90% {padding: 0 300px 0 300px; -webkit-transform: translate(-300px, 0px); transform: translate(-300px, 0px);  opacity: 1; background-image: none;}
+    100% {padding: 0 300px 0 300px; -webkit-transform: translate(-300px, 0px); transform: translate(-300px, 0px);  opacity: 0;}
 }
 
 #buffer{
@@ -393,11 +469,15 @@ section .heading{
   padding-right: 10%;
   padding-left: 10%;
   padding-bottom: 20px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
 .school:hover{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
     
 }
 
@@ -415,12 +495,17 @@ section .heading{
     width: 25%;
     display: inline;
     margin: 0 20px 0 20px;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
 .gallery-image:hover{
-    transform: scale(1.05)
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05)
 }
 
 
@@ -435,15 +520,20 @@ section .heading{
 .contact-image{
   height: 65px;
   width: 65px;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
   transition: all .2s ease;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 10px;
   
 }
 
 
 .contact-image:hover{
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 h3{
@@ -458,20 +548,33 @@ h3{
 #dl{
     height: 20px;
     padding-left: 5px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    animation-name: none;
-    animation-duration: 2s;
-    animation-timing-function: ease;
+    -webkit-animation-name: none;
+            animation-name: none;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+}
+
+@-webkit-keyframes dl{
+    0% {-webkit-transform: translateY(0px);transform: translateY(0px);}
+    50% {-webkit-transform: translateY(10px);transform: translateY(10px);}
+    100% {-webkit-transform: translateY(0px);transform: translateY(0px);}
 }
 
 @keyframes dl{
-    0% {transform: translateY(0px);}
-    50% {transform: translateY(10px);}
-    100% {transform: translateY(0px);}
+    0% {-webkit-transform: translateY(0px);transform: translateY(0px);}
+    50% {-webkit-transform: translateY(10px);transform: translateY(10px);}
+    100% {-webkit-transform: translateY(0px);transform: translateY(0px);}
 }
 
 
 form{
+    -webkit-transition: all 2s ease;
+    -o-transition: all 2s ease;
     transition: all 2s ease;
     opacity: 1;
 }
@@ -487,8 +590,14 @@ form input, form textarea{
     font-family: 'Roboto', sans-serif;
     border: solid;
     border-color: aliceblue;
-    transition-timing-function: ease;
-    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+         -o-transition-timing-function: ease;
+            transition-timing-function: ease;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+    -webkit-transition-property: border-color;
+    -o-transition-property: border-color;
     transition-property: border-color;
     padding: 1% 1% 1% 1%;
     outline: none;
@@ -516,28 +625,38 @@ button{
     padding: 2% 2% 2% 2%;
     width: 53%;
     border: none;
-    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
     margin-top: 10px;
     cursor: pointer;
     overflow: hidden;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
 button:hover{
-    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+            transform: scale(1.04);
 }
 
 #thankyou_message{
-    animation: all 1s ease;
+    -webkit-animation: all 1s ease;
+            animation: all 1s ease;
 }
 
 
 #plane{
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 
 .move{
-    transform: translate(100px, -100px);
+    -webkit-transform: translate(100px, -100px);
+        -ms-transform: translate(100px, -100px);
+            transform: translate(100px, -100px);
 }
 
 
