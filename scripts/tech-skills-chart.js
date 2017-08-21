@@ -3,7 +3,7 @@ var ctx = document.getElementById("technical");
         type: 'horizontalBar',
         scaleFontColor: "#FFFFFF",
         data: {
-            labels: ["HTML/CSS", "Java", "Angular2", "Python", "JavaScript", "SQL"],
+            labels: ["           HTML/CSS", "Java", "Angular2", "Python", "JavaScript", "SQL"],
             datasets: [{
                 data: [9, 9, 7, 7, 7, 7],
                 label: "Technical Skills",
@@ -19,14 +19,22 @@ var ctx = document.getElementById("technical");
         options: {
             scales: {
                 yAxes: [{
+                    gridLines: {
+                      display: false,
+                        drawBorder: false
+                    },
                     ticks: {
                         fontColor: 'black'
                     }
                 }],
                 xAxes: [{
-                  ticks: {
-                    fontColor: "black",
-                    beginAtZero:true
+                    gridLines: {
+                      display: false,
+                        drawBorder: false
+                    },
+                    ticks: {
+                        fontColor: 'black',
+                        beginAtZero:true
                   }
                 }]
             },

@@ -266,6 +266,54 @@ nav{
   z-index: 10;
 }
 
+.overlay { 
+    height: 0;
+    width: 100%;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(40,142,223, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+}
+
+
+.overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s; 
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #deeff8;
+    transform: scale(1.1);
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+#mobile-nav-icon{
+    height: 40px;
+    display: none;
+}
+
 .container{
   width: 80%;
   margin: auto;
@@ -277,7 +325,6 @@ nav{
 
 }
 
-
 section {
   padding-top: 10px;
   border: none;
@@ -286,7 +333,6 @@ section {
   border-color: #288edf;
 
 }
-
 
 section .container{
   border: none;
@@ -324,7 +370,7 @@ section .container h2{
   width: 100px;
   border: none;
   background-color: #288edf;
-  margin-left: 45%;
+  margin-left: 44%;
   margin-top: 15%;
   -webkit-animation-name: landing;
           animation-name: landing;
@@ -446,8 +492,12 @@ section .container h2{
   border: none;
   width: 45%;
   display: inline-table;
-  height: 100px;
+  height: 200px;
   padding: 0 10px 30px 10px;
+}
+
+.chart{
+    height: 100%;
 }
 
 section .heading{
@@ -687,6 +737,11 @@ footer p{
         text-align: center;
         width: 100%;
     }
+    
+    #animate{
+        margin-left: 40%;
+        margin-top: 10%;
+    }
         
     .top-icons, nav {
         display: none;
@@ -754,5 +809,24 @@ footer p{
     
     footer p{
         padding: 0 0 20px 0;
+    }
+    
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 50px;
+        top: 5%;
+        left: 85%;
+    }
+    
+    #mobile-nav-icon{
+        display: block;
+        position: fixed;
+        z-index: 10;
+        margin-left: 85%;
+        top: 8%;
+        opacity: 0.5;
+        cursor: pointer;
+        transition: all ease 0.4s;
+        
     }
 }

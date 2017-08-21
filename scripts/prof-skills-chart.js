@@ -19,14 +19,22 @@ var ctx = document.getElementById("professional");
         options: {
             scales: {
                 yAxes: [{
+                    gridLines: {
+                      display: false,
+                        drawBorder: false
+                    },
                     ticks: {
                         fontColor: 'black'
                     }
                 }],
                 xAxes: [{
-                  ticks: {
-                    fontColor: 'black',
-                    beginAtZero:true
+                    gridLines: {
+                      display: false,
+                        drawBorder: false
+                    },
+                    ticks: {
+                        fontColor: 'black',
+                        beginAtZero:true
                   }
                 }]
             },

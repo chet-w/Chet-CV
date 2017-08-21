@@ -20,7 +20,18 @@
                   <a href="https://www.github.com/warmdad"><img src="images/git-c2.png" class="top-icon"></a>
               </div>
           </div>
-          
+        <div id="mobile-nav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#profile" onclick="toggleNav()">Profile</a>
+            <a href="#edu" onclick="toggleNav()">Education</a>
+            <a href="#skills" onclick="toggleNav()">Skills</a>
+            <a href="#experience" onclick="toggleNav()">Experience</a>
+            <a href="#portfolio" onclick="toggleNav()">Portfolio</a>
+            <a href="#contact" onclick="toggleNav()">Contact</a>
+          </div>
+        </div>
+          <img src="images/hamburger.png" onclick="toggleNav()" id="mobile-nav-icon"></img>
       </header>
       <nav class="side-nav">
           <ul>
@@ -97,10 +108,10 @@
         <div class="container" class="fade">
             <h2 class="heading" id="skills-head">Skills</h2>
             <div class="chart-contain">
-                <canvas id="technical" width="400" height="250"></canvas>
+                <canvas id="technical" class="chart"></canvas>
             </div>
             <div class="chart-contain">
-                <canvas id="professional" width="400" height="250"></canvas>
+                <canvas id="professional" class="chart"></canvas>
             </div>
             <div class="text">
                 <p>

@@ -18,8 +18,6 @@ $(document).ready(function(){
 $(document).ready(function() {
         var pageTop = $("header").height();
         var pageBot = $(window).height() * 0.67;
-        console.log("pageBot = " + pageBot);
-        console.log("pageTop = " + pageTop);
     
         $(window).scroll( function(){
             
@@ -35,7 +33,6 @@ $(document).ready(function() {
             var vertPos = $(window).scrollTop();
             var cutOff = ($(window).height() - pageTop) * -0.50;
             
-            console.log(eduHeading - vertPos);
 
             if(profHeading - vertPos > cutOff){
                 $("#prof-bul").css("filter", "none");
@@ -103,3 +100,15 @@ $(function() {
         }
       });
     });
+
+function toggleNav() {
+    var nav = $("#mobile-nav");
+    
+    if(nav.css("height") == "0px"){
+        nav.css("height", "100%");
+        $("#mobile-nav-icon").css("opacity", "0");
+    }else{
+        nav.css("height", "0%");
+        $("#mobile-nav-icon").css("opacity", "0.5");
+    }
+}
