@@ -276,6 +276,8 @@ nav{
     background-color: rgb(0,0,0);
     background-color: rgba(40,142,223, 0.9); 
     overflow-x: hidden; 
+    -webkit-transition: 0.5s; 
+    -o-transition: 0.5s; 
     transition: 0.5s; 
 }
 
@@ -294,12 +296,16 @@ nav{
     font-size: 36px;
     color: #ffffff;
     display: block;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s; 
 }
 
 .overlay a:hover, .overlay a:focus {
     color: #deeff8;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 .overlay .closebtn {
@@ -826,7 +832,10 @@ footer p{
         top: 8%;
         opacity: 0.5;
         cursor: pointer;
+        -webkit-transition: all ease 0.4s;
+        -o-transition: all ease 0.4s;
         transition: all ease 0.4s;
         
     }
+       
 }
